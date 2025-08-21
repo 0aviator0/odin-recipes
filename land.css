@@ -1,0 +1,156 @@
+*{
+    font:Roboto;
+}
+header{
+    background-color: #1f2937;
+}
+#tab{
+    background-color:#1f2937;
+    color: whitesmoke;
+    display:flex;
+    justify-content: space-evenly;
+}
+#logo{
+    font-size: 28px;
+}
+#link{
+    display:flex;
+    justify-self:flex-end;
+    margin-left:150px;
+}
+.links{
+    margin-right:10px;
+}
+#linkthree{
+    margin-right:0px;
+}
+#tab2{
+    display:flex;
+    justify-content: center;
+
+}
+#text{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-left:100px;
+    width:350px;
+    height:min-content;
+    margin-top:20px;
+}
+#upper{
+    font-size: 44px;
+    font-weight: 900;
+    color:#f9faf8;
+    margin:0px;
+}
+#lower{
+    font-size:18px;
+    color:#e5e7eb;
+    margin:0px;
+}
+button{
+    background-color: #3882f6;
+    color:whitesmoke;
+    border-radius:5%;
+    border: none;
+    margin-bottom: 10px;
+}
+#image{
+    width:350px;
+    height:180px;
+    border: 2px solid #e5e7eb;
+    margin-right:100px;
+    margin-top:20px;
+    margin:40px;
+}
+#content{
+    width:100%;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+#info{
+    margin:40px;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+#cont{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+.box{
+    width:100px;
+    height:150px;
+    margin:20px;
+}
+.boxy{
+    width:100%;
+    height:80%;
+    border:2px solid #4fb85d;
+}
+#quote{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #e5e7eb;
+    margin-top:50px;
+}
+#action{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin-top:50px;
+}
+#call{
+    width:fit-content;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    background-color: #3882f6;
+}
+#callto{
+    margin-left:20px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: #3882f6;
+}
+#callto-text{
+    font-size: 24px;
+    margin:0px;
+    margin-top:20px;
+}
+#callto-subtext{
+    margin:0px;
+    margin-bottom:20px;
+}
+#calltoaction{
+    margin-right:20px;
+    margin-left:30px;
+}
+#c{
+    width:80px;
+    background-color: #3882f6;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+#foot{
+    margin-top:50px;
+    background-color: #1f2937;
+    color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
