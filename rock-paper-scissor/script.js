@@ -37,7 +37,8 @@ function compare(computerChoice, userChoice){
 for(let i = 0; i < 5; i++){
     computerChoice = comChoice();
     userChoice = userInput();
-    console.log("computer chose " + computerChoice + " " + compare(computerChoice, userChoice));
+    console.log("computer chose " + computerChoice + " " + "and user chose " + userChoice);
+    console.log(compare(computerChoice, userChoice));
 }
 console.log("Final Score - User: " + score.user + ", Computer: " + score.computer);
 if (score.user > score.computer) {
