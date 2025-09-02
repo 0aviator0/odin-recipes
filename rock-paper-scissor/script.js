@@ -1,3 +1,4 @@
+//computer choice
 let computerChoice;
 function comChoice(){
     let x = Math.random();
@@ -10,7 +11,10 @@ if (x < 0.34) {
 }
 return computerChoice;
 }
+//user choice
 let userChoice;
+let play = document.getElementById("prompt");
+play.onclick = function(){
 function userInput(){
     userChoice = prompt("Enter your choice (rock, paper, scissors):");
     return userChoice;
@@ -31,7 +35,12 @@ function compare(computerChoice, userChoice){
         score.computer++;
         alert("Computer wins! You: " + score["user"] + ", Computer: " + score["computer"]);
         return "Computer wins!";
-    } else {
+    } else if(userChoice!== "rock" && userChoice!== "paper" && userChoice!== "scissors")
+    {
+        alert("FINE DON'T PLAY!");
+        stop();
+    }
+    else {
         score.user++;
         alert("You win! You: " + score["user"] + ", Computer: " + score["computer"]);
         return "You win!";
@@ -57,3 +66,4 @@ if (score.user > score.computer) {
 }   
 alert("Thanks for playing!");
 console.log("Thanks for playing!");
+};
