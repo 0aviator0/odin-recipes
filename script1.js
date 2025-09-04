@@ -49,22 +49,20 @@ function playGame(){
     }
     let scorekeeper = document.getElementById("scorekeeper");
     scorekeeper.innerHTML = "You: " + scoreyou + " <br> Computer: " + scorecom;
-}
-if(scoreyou === 5 && scorecom === 5){
-    alert("It's a tie! Refresh to play again.");
-    rock.disabled = true;
-    paper.disabled = true;
-    scissors.disabled = true;
-}
-else if(scoreyou === 5){
-    alert("You win! Refresh to play again.");
-    rock.disabled = true;
-    paper.disabled = true;
-    scissors.disabled = true;
-}
-else if(scorecom === 5){
-    alert("You lose! Refresh to play again.");
-    rock.disabled = true;
-    paper.disabled = true;
-    scissors.disabled = true;
+    if (scoreyou === 5) {
+        alert("Congratulations! You reached 5 points and won the game!");
+        scoreyou = 0;
+        scorecom = 0;
+        scorekeeper.innerHTML = "You: " + 0 + " <br> Computer: " + 0;
+    } else if (scorecom === 5) {
+        alert("Game over! The computer reached 5 points and won the game.");
+        scoreyou = 0;
+        scorecom = 0;
+        scorekeeper.innerHTML = "You: " + 0 + " <br> Computer: " + 0;
+    } else if (scoreyou === 5 && scorecom === 5) {
+        alert("It's a tie! Both you and the computer reached 5 points.");
+        scoreyou = 0;
+        scorecom = 0;
+        scorekeeper.innerHTML = "You: " + 0 + " <br> Computer: " + 0;
+    }
 }
