@@ -50,3 +50,21 @@ function playGame(){
     let scorekeeper = document.getElementById("scorekeeper");
     scorekeeper.innerHTML = "You: " + scoreyou + " <br> Computer: " + scorecom;
 }
+if(scoreyou === 5 && scorecom === 5){
+    alert("It's a tie! Refresh to play again.");
+    rock.disabled = true;
+    paper.disabled = true;
+    scissors.disabled = true;
+}
+else if(scoreyou === 5){
+    alert("You win! Refresh to play again.");
+    rock.disabled = true;
+    paper.disabled = true;
+    scissors.disabled = true;
+}
+else if(scorecom === 5){
+    alert("You lose! Refresh to play again.");
+    rock.disabled = true;
+    paper.disabled = true;
+    scissors.disabled = true;
+}
