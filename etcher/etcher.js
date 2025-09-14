@@ -73,3 +73,13 @@ let black = document.getElementById("black");
 black.addEventListener("click", function(){
     hover();
 });
+
+let erase = document.getElementById("erase");
+erase.addEventListener("click", function(){
+    for(let i = 0; i < acSize; i++) {
+        cell.row[i].addEventListener("mouseover", function(){
+            cell.row[i].style.backgroundColor = "white";
+            cell.row[i].style.opacity = "0.1";
+        });
+    }
+});
